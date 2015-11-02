@@ -10,7 +10,7 @@ An implementation of the algorithm: [http://en.wikipedia.org/wiki/Partial_correl
 
 The result is the partial correlation between X and Y while controlling for the effect of Z
 
-Code is a correction of the one from [here]([https://gist.github.com/fabianp/9396204419c7b638d38f), and it also allows to set which variables you want to control for. Code is tested against the R pcorr implementation.
+Code is a correction of the one from [here](https://gist.github.com/fabianp/9396204419c7b638d38f), and it also allows to set which variables you want to control for. Code is tested against the R pcorr implementation.
 
 ```
 pcorr(df,ind) 
