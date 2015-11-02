@@ -1,8 +1,7 @@
 import numpy as np
 from scipy import stats, linalg
 
-def pcorr(DF,k):
-    C=DF.copy()
+def pcorr(C,k):
     val=list(C.columns.values)
     C[u'ones']=np.ones(C.shape[0])
     C = np.asarray(C)
