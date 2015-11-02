@@ -12,7 +12,9 @@ The result is the partial correlation between X and Y while controlling for the 
 
 Code is a modification of the one from [here]([https://gist.github.com/fabianp/9396204419c7b638d38f) (which is wrong) that also allows to set what variables you want to control for.
 
-  pcorr(df,ind) 
+```
+pcorr(df,ind) 
+```
 
 Input:
 
@@ -22,7 +24,9 @@ ind - array of indices that serve as the control variables
 
 Sample usage:
 
-  pcorr(df,[0,1]).to_csv('pcorr.csv',sep=',')
+```
+pcorr(df,[0,1]).to_csv('pcorr.csv',sep=',')
+```
 
 Requires:
 
