@@ -10,7 +10,7 @@ An implementation of the algorithm: [http://en.wikipedia.org/wiki/Partial_correl
 
 The result is the partial correlation between X and Y while controlling for the effect of Z
 
-Code is a modification of the one from [here]([https://gist.github.com/fabianp/9396204419c7b638d38f) (which is wrong) that also allows to set what variables you want to control for.
+Code is a correction of the one from [here]([https://gist.github.com/fabianp/9396204419c7b638d38f), and it also allows to set which variables you want to control for. Code is tested against the R pcorr implementation.
 
 ```
 pcorr(df,ind) 
@@ -20,7 +20,7 @@ Input:
 
 df -  Pandas data frame and outputs a dataframe with a matrix of the Pearson correlation coefficients
 
-ind - array of indices that serve as the control variables 
+ind - array of indices of the variables to control for
 
 Sample usage:
 
