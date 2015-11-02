@@ -4,23 +4,21 @@ Random statistics scripts I made.
 
 ### Partial correlation in Python
 
-Simple partial correlation implementation. 
+Simple [partial correlation](http://en.wikipedia.org/wiki/Partial_correlation#Using_linear_regression) implementation. 
 
-An implementation of the algorithm: [http://en.wikipedia.org/wiki/Partial_correlation#Using_linear_regression](http://en.wikipedia.org/wiki/Partial_correlation#Using_linear_regression)
-
-The result is the partial correlation between X and Y while controlling for the effect of Z
+Takes as input a pandas dataframe and computes a matrix of correlations between all variables with a specified set (z) as controls.
 
 Code is a correction of the one from [here](https://gist.github.com/fabianp/9396204419c7b638d38f), and it also allows to set which variables you want to control for. Code is tested against the R pcorr implementation.
 
 ```
-pcorr(df,ind) 
+pcorr(df,z)
 ```
 
 Input:
 
 df -  Pandas data frame and outputs a dataframe with a matrix of the Pearson correlation coefficients
 
-ind - array of indices of the variables to control for
+z - array of indices of the variables to control for
 
 Sample usage:
 
