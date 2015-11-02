@@ -1,6 +1,6 @@
 # Statistics scripts
 
-Random statistics scripts I made.
+Random statistics scripts...
 
 ### Partial correlation in Python
 
